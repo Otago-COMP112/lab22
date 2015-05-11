@@ -1,0 +1,133 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+
+html{
+    background-color: #6B949E;
+    color: white;
+    font-family: 'Slabo 27px', serif;
+}
+
+body {
+    width: 75%;
+    margin: 80px auto;
+    background-color: red;
+}
+
+nav {
+    width: 22%;
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    color: #0F434F;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 3px 0 3px 50px;
+    background-color: #F4F4F4;
+}
+
+nav ul li.active{
+    margin-left: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.main-content{
+    width: 73%;
+    padding: 20px;
+    margin-top: 3px;
+    display: block;
+    float: left;
+    background-color: #F4F4F4;
+    color: #0F434F;
+    border: 1px solid black;
+    line-height: 1.5em;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+section p{
+    margin-left: 50px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.equipment-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.equipment-content p{
+    text-align: center;
+}
+
+.equipment{
+    padding: 15px;
+    margin: 15px;
+}
+
+.equipment img{
+    float: left;
+    width: 20%;
+}
+
+.equipment div{
+    margin: 0;
+    float: right;
+    width: 75%
+}
+
+.equipment div p{
+    margin: 0;
+    text-align: left;
+}
+
+
+.equipment div h3{
+    margin: 0 0 5px 0;
+}
+
+
+.schedule-content p{
+    margin: 0;
+}
+
+.schedule-content section table {
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+.schedule-content section table, th, td {
+    border: 1px solid black;
+}
+
+.schedule-content section th {
+    background-color: #0F434F;
+    color: white;
+    padding: 15px;
+}
+
+.schedule-content section td {
+    padding: 15px;
+}
