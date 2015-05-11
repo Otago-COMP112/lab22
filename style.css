@@ -7,13 +7,12 @@ html{
 }
 
 body {
-    width: 75%;
+    width: 77%;
     margin: 80px auto;
-    background-color: red;
 }
 
 nav {
-    width: 22%;
+    width: 18%;
     display: block;
     float: left;
     padding: 0;
@@ -30,7 +29,7 @@ nav ul{
 nav ul li{
     border: 1px solid black;
     padding: 10px;
-    margin: 3px 0 3px 50px;
+    margin: 3px 0 3px 30px;
     background-color: #F4F4F4;
 }
 
@@ -130,4 +129,28 @@ section p{
 
 .schedule-content section td {
     padding: 15px;
+}
+
+.note{
+    font-style: italic;
+}
+
+.league-content table{
+    width: 95%;
+    margin-left: 50px;
+    border-collapse: collapse;
+}
+
+.league-content section table, th, td {
+    border: 1px solid white;
+}
+
+.league-content section th {
+    background-color: #0F434F;
+    color: white;
+}
+
+.league-content table caption{
+    font-weight: bold;
+    text-decoration: underline;
 }
