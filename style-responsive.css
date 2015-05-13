@@ -1,3 +1,8 @@
+/*
+tinhtooaung
+style-responsive.css
+*/
+
 @media (max-width: 900px) {
 
     body{
@@ -44,5 +49,10 @@
     
     h1{
         line-height: 1.5em;
+    }
+
+    form .s2{
+        width: 100%;
+        float: left;
     }
 }

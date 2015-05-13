@@ -1,3 +1,8 @@
+/*
+tinhtooaung
+style.css
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Slabo+27px);
 
 html{
@@ -154,3 +159,56 @@ section p{
     font-weight: bold;
     text-decoration: underline;
 }
+
+form {
+    width: 100%;
+}
+
+form .s2{
+    width: 50%;
+    float: left;
+}
+
+.form-group .label-group {
+    width: 100%;
+}
+
+.form-group .label-inline{
+    width: 25%;
+    display: inline;
+}
+
+.form-group label {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.form-group input.input-lg{
+    height: 25px;
+    font-size: 15px;
+}
+
+.form-group input {
+    width: 93%;
+    margin: 15px;
+    padding: 5px;
+    font-family: 'Slabo 27px', serif;
+}
+
+.form-group input[type=submit], input[type=reset] {
+    width: 100px;
+    float: right;
+    margin: 0;
+}
+
+.s2 input{
+    width: 85%;
+}
+
+.form-group textarea{
+    width: 93%;
+    margin: 15px;
+    padding: 5px;
+    font-family: 'Slabo 27px', serif;
+}
+

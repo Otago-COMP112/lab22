@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <!--
+        tinhtooaung
+        schedule.html
+    -->
     <meta charset="UTF-8">
     <title>Mosgiel Underwater Hockey Club</title>
     <link rel="stylesheet" href="style.css"/>
@@ -42,6 +46,45 @@
             New players always welcome, just come along and give it a go! If you don't have any gear don't worry,
             we can lend you some.
         </p>
+    </section>
+
+    <section>
+        <h3>Enquiry</h3>
+
+        <form method="post" enctype="x-www-form-urlencoded" action="http://web112 .otago.ac.nz/112bin/112formslab.cgi">
+            <fieldset>
+                <input type="hidden" name="recipient" value="tin22413@student.otago.ac.nz">
+                <input type="hidden" name="followup-page" value="http://www.cs.otago. ac.nz/comp112/followup.html">
+                <div class="form-group s2">
+                    <div class="label-group">
+                        <label for="name">Name</label>
+                    </div>
+                    <input class="input-lg" type="text" id="name" placeholder="Enter name"/>
+                </div>
+                <div class="form-group s2">
+                    <div class="label-group">
+                        <label for="email">Email</label>
+                    </div>
+                    <input class="input-lg" type="email" id="email" name="sender" placeholder="Enter email"/>
+                </div>
+                <div class="form-group">
+                    <div class="label-group">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <input class="input-lg" type="text" id="subject" name="subject" placeholder="Enter subject"/>
+                </div>
+                <div class="form-group">
+                    <div class="label-group">
+                        <label for="message">Message</label>
+                    </div>
+                    <textarea id="message" placeholder="Enter message" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <input class="input-lg" type="submit" value="Send">
+                    <input class="input-lg" type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
     </section>
 </div>
 
