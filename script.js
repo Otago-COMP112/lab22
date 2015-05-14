@@ -23,6 +23,9 @@ function validateForm() {
     if (email == null || email == "") {
         errors.push("Email is required");
         document.getElementById("labelEmail").classList.add('input-error')
+    }else if(!validateEmail(email)){
+        errors.push("Invalid email address");
+        document.getElementById("labelEmail").classList.add('input-error')
     }
 
     var subject  = document.forms["contactForm"]["subject"].value;
@@ -64,4 +67,9 @@ function removeErrors(){
     while (errorsContainer.firstChild) {
         errorsContainer.removeChild(errorsContainer.firstChild);
     }
+}
+
+function validateEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
 }
