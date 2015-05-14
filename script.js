@@ -16,25 +16,25 @@ function validateForm() {
     var name  = document.forms["contactForm"]["name"].value;
     if (name == null || name == "") {
         errors.push("Name is required");
-        document.getElementById("name").classList.add('input-error')
+        document.getElementById("labelName").classList.add('input-error')
     }
 
     var email  = document.forms["contactForm"]["email"].value;
     if (email == null || email == "") {
         errors.push("Email is required");
-        document.getElementById("email").classList.add('input-error')
+        document.getElementById("labelEmail").classList.add('input-error')
     }
 
     var subject  = document.forms["contactForm"]["subject"].value;
     if (subject == null || subject == "") {
         errors.push("Subject is required");
-        document.getElementById("subject").classList.add('input-error')
+        document.getElementById("labelSubject").classList.add('input-error')
     }
 
     var message  = document.forms["contactForm"]["message"].value;
     if (message == null || message == "") {
         errors.push("Message is required");
-        document.getElementById("message").classList.add('input-error')
+        document.getElementById("labelMessage").classList.add('input-error')
     }
 
     if(!isValid){
@@ -55,9 +55,9 @@ function showErrors(errors){
 
 function removeErrors(){
     document.getElementsByClassName('form-errors')[0].style.display = 'none';
-    var inputs = document.getElementsByTagName("input");
-    for(var i = 0; i < inputs.length; i++){
-        inputs[i].classList.remove('input-error');
+    var labels = document.getElementsByTagName("label");
+    for(var i = 0; i < labels.length; i++){
+        labels[i].classList.remove('input-error');
     }
     document.getElementsByTagName("textarea")[0].classList.remove('input-error');
     var errorsContainer = document.getElementById('form-errors-containter');

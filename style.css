@@ -3,8 +3,6 @@ tinhtooaung
 style.css
 */
 
-@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
-
 html{
     background-color: #6B949E;
     color: white;
@@ -26,7 +24,6 @@ nav {
 nav ul{
     width: 100%;
     list-style: none;
-    color: #0F434F;
     padding: 0;
     margin: 0;
 }
@@ -36,6 +33,7 @@ nav ul li{
     padding: 10px;
     margin: 3px 0 3px 30px;
     background-color: #F4F4F4;
+    color: #0F434F;
 }
 
 nav ul li.active{
@@ -189,6 +187,7 @@ form .s2{
 }
 
 .form-errors{
+    background-color: white;
     color: red;
     border: 1px solid red;
 }
@@ -214,7 +213,8 @@ form .s2{
 }
 
 .form-group .input-error{
-    border: 1px solid red;
+    background-color: #F4F4F4;
+    color: red;
 }
 
 .s2 input{

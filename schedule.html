@@ -7,6 +7,7 @@
     -->
     <meta charset="UTF-8">
     <title>Mosgiel Underwater Hockey Club</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Slabo+27px"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="style-responsive.css"/>
 </head>
@@ -52,9 +53,8 @@
         <h3>Enquiry</h3>
 
         <form id="contactForm" method="post"
-              enctype="x-www-form-urlencoded"
-              action="http://web112 .otago.ac.nz/112bin/112formslab.cgi"
-              onsubmit="return validateForm()">
+              enctype="application/x-www-form-urlencoded"
+              action="http://web112.otago.ac.nz/112bin/112formslab.cgi" onsubmit="return validateForm()">
             <fieldset>
                 <input type="hidden" name="recipient" value="tin22413@student.otago.ac.nz">
                 <input type="hidden" name="followup-page" value="http://www.cs.otago. ac.nz/comp112/followup.html">
@@ -63,25 +63,25 @@
                 </div>
                 <div class="form-group s2">
                     <div class="label-group">
-                        <label for="name">Name</label>
+                        <label for="name" id="labelName">Name</label>
                     </div>
                     <input class="input-lg" type="text" id="name" name="name" placeholder="Enter name" required/>
                 </div>
                 <div class="form-group s2">
                     <div class="label-group">
-                        <label for="email">Email</label>
+                        <label for="email" id="labelEmail">Email</label>
                     </div>
                     <input class="input-lg" type="email" id="email" name="sender" placeholder="Enter email" required/>
                 </div>
                 <div class="form-group">
                     <div class="label-group">
-                        <label for="subject">Subject</label>
+                        <label for="subject" id="labelSubject">Subject</label>
                     </div>
                     <input class="input-lg" type="text" id="subject" name="subject" placeholder="Enter subject" required/>
                 </div>
                 <div class="form-group">
                     <div class="label-group">
-                        <label for="message">Message</label>
+                        <label for="message" id="labelMessage">Message</label>
                     </div>
                     <textarea class="" id="message" placeholder="Enter message" name="message" rows="5" required></textarea>
                 </div>

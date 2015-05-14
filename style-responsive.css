@@ -13,13 +13,11 @@ style-responsive.css
     nav {
         margin: 0 auto;
         width: 100%;
-        color: #0F434F;
     }
 
     nav ul{
         width: 100%;
         list-style-type: none;
-        color: #0F434F;
     }
 
     nav ul li{
@@ -27,6 +25,7 @@ style-responsive.css
         float: left;
         padding: 5px;
         background-color: #F4F4F4;
+        color: #0F434F;
         margin-left: 5px;
     }
 
