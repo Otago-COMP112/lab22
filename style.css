@@ -188,6 +188,11 @@ form .s2{
     font-size: 15px;
 }
 
+.form-errors{
+    color: red;
+    border: 1px solid red;
+}
+
 .form-group input {
     width: 93%;
     margin: 15px;
@@ -201,14 +206,26 @@ form .s2{
     margin: 0;
 }
 
-.s2 input{
-    width: 85%;
-}
-
 .form-group textarea{
     width: 93%;
     margin: 15px;
     padding: 5px;
     font-family: 'Slabo 27px', serif;
+}
+
+.form-group .input-error{
+    border: 1px solid red;
+}
+
+.s2 input{
+    width: 85%;
+}
+figure{
+    text-align: center;
+}
+
+figure img{
+    width: 50%;
+    margin: 0 auto;
 }
 

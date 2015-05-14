@@ -51,33 +51,39 @@
     <section>
         <h3>Enquiry</h3>
 
-        <form method="post" enctype="x-www-form-urlencoded" action="http://web112 .otago.ac.nz/112bin/112formslab.cgi">
+        <form id="contactForm" method="post"
+              enctype="x-www-form-urlencoded"
+              action="http://web112 .otago.ac.nz/112bin/112formslab.cgi"
+              onsubmit="return validateForm()">
             <fieldset>
                 <input type="hidden" name="recipient" value="tin22413@student.otago.ac.nz">
                 <input type="hidden" name="followup-page" value="http://www.cs.otago. ac.nz/comp112/followup.html">
+                <div class="form-errors" style="display: none;">
+                    <ul id="form-errors-containter"></ul>
+                </div>
                 <div class="form-group s2">
                     <div class="label-group">
                         <label for="name">Name</label>
                     </div>
-                    <input class="input-lg" type="text" id="name" placeholder="Enter name"/>
+                    <input class="input-lg" type="text" id="name" name="name" placeholder="Enter name" required/>
                 </div>
                 <div class="form-group s2">
                     <div class="label-group">
                         <label for="email">Email</label>
                     </div>
-                    <input class="input-lg" type="email" id="email" name="sender" placeholder="Enter email"/>
+                    <input class="input-lg" type="email" id="email" name="sender" placeholder="Enter email" required/>
                 </div>
                 <div class="form-group">
                     <div class="label-group">
                         <label for="subject">Subject</label>
                     </div>
-                    <input class="input-lg" type="text" id="subject" name="subject" placeholder="Enter subject"/>
+                    <input class="input-lg" type="text" id="subject" name="subject" placeholder="Enter subject" required/>
                 </div>
                 <div class="form-group">
                     <div class="label-group">
                         <label for="message">Message</label>
                     </div>
-                    <textarea id="message" placeholder="Enter message" rows="5"></textarea>
+                    <textarea class="" id="message" placeholder="Enter message" name="message" rows="5" required></textarea>
                 </div>
                 <div class="form-group">
                     <input class="input-lg" type="submit" value="Send">
@@ -88,5 +94,6 @@
     </section>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
