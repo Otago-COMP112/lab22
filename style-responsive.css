@@ -3,55 +3,54 @@ tinhtooaung
 style-responsive.css
 */
 
-@media (max-width: 900px) {
+body{
+    width: 85%;
+    margin: 30px auto;
+}
 
-    body{
-        width: 85%;
-        margin: 30px auto;
-    }
+nav {
+    margin: 0 auto;
+    width: 100%;
+}
 
-    nav {
-        margin: 0 auto;
-        width: 100%;
-    }
+nav ul{
+    width: 100%;
+    list-style-type: none;
+}
 
-    nav ul{
-        width: 100%;
-        list-style-type: none;
-    }
+nav ul li{
+    border: 1px solid black;
+    float: left;
+    padding: 5px;
+    background-color: #F4F4F4;
+    color: #0F434F;
+    margin-left: 5px;
+}
 
-    nav ul li{
-        border: 1px solid black;
-        float: left;
-        padding: 5px;
-        background-color: #F4F4F4;
-        color: #0F434F;
-        margin-left: 5px;
-    }
+nav ul li.active{
+    margin-left: 5px;
+    background-color: gray;
+    color: black;
+}
 
-    nav ul li.active{
-        margin-left: 5px;
-    }
+.main-content{
+    width: 100%;
+    padding: 8px;
+}
 
-    .main-content{
-        width: 100%;
-        padding: 8px;
-    }
+section p{
+    margin-left: 30px;
+}
 
-    section p{
-        margin-left: 30px;
-    }
+.league-content table{
+    margin-left: 0;
+}
 
-    .league-content table{
-        margin-left: 0;
-    }
-    
-    h1{
-        line-height: 1.5em;
-    }
+h1{
+    line-height: 1.5em;
+}
 
-    form .s2{
-        width: 100%;
-        float: left;
-    }
+form .s2{
+    width: 100%;
+    float: left;
 }

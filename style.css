@@ -44,6 +44,11 @@ nav ul li a{
     text-decoration: none;
 }
 
+nav ul li a:link, a:visited, a:hover, a:active {
+    background-color: #F4F4F4;
+    color: #0F434F;
+}
+
 .main-content{
     width: 73%;
     padding: 20px;
